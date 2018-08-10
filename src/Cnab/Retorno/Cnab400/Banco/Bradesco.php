@@ -124,7 +124,8 @@ class Bradesco extends AbstractRetorno implements RetornoCnab400
             ->setServicoCodigo($this->rem(10, 11, $header))
             ->setServico($this->rem(12, 26, $header))
             ->setCodigoCliente($this->rem(27, 46, $header))
-            ->setData($this->rem(95, 100, $header));
+            ->setData($this->rem(95, 100, $header))
+            ->setAvisoBancario($this->rem(109, 113, $header));
 
         return true;
     }

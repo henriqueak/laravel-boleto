@@ -55,6 +55,29 @@ class Header implements HeaderContract
     protected $codigoCliente;
 
     /**
+     * @var string
+     */
+    protected $avisoBancario;
+
+    /**
+     * @return string
+     */
+    public function getAvisoBancario(): string
+    {
+        return $this->avisoBancario;
+    }
+
+    /**
+     * @param string $avisoBancario
+     * @return Header
+     */
+    public function setAvisoBancario(string $avisoBancario): Header
+    {
+        $this->avisoBancario = $avisoBancario;
+        return $this;
+    }
+
+    /**
      * @return string
      */
     public function getOperacaoCodigo()
