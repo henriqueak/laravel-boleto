@@ -86,6 +86,26 @@ class Detalhe implements DetalheContract
      * @var string
      */
     protected $error;
+    /**
+     * @var string
+     */
+    protected $motivo1;
+    /**
+     * @var string
+     */
+    protected $motivo2;
+    /**
+     * @var string
+     */
+    protected $motivo3;
+    /**
+     * @var string
+     */
+    protected $motivo4;
+    /**
+     * @var string
+     */
+    protected $motivo5;
 
     /**
      * @return string
@@ -507,8 +527,103 @@ class Detalhe implements DetalheContract
     public function setError($error)
     {
         $this->ocorrenciaTipo = self::OCORRENCIA_ERRO;
-        $this->error          = $error;
+        $this->error = $error;
 
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMotivo1()
+    {
+        return $this->motivo1;
+    }
+
+    /**
+     * @param string $error
+     *
+     * @return Detalhe
+     */
+    public function setMotivo1($motivo)
+    {
+        $this->motivo1 = $motivo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMotivo2()
+    {
+        return $this->motivo2;
+    }
+
+    /**
+     * @param string $error
+     *
+     * @return Detalhe
+     */
+    public function setMotivo2($motivo)
+    {
+        $this->motivo2 = $motivo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMotivo3()
+    {
+        return $this->motivo3;
+    }
+
+    /**
+     * @param string $error
+     *
+     * @return Detalhe
+     */
+    public function setMotivo3($motivo)
+    {
+        $this->motivo3 = $motivo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMotivo4()
+    {
+        return $this->motivo4;
+    }
+
+    /**
+     * @param string $error
+     *
+     * @return Detalhe
+     */
+    public function setMotivo4($motivo)
+    {
+        $this->motivo4 = $motivo;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMotivo5()
+    {
+        return $this->motivo5;
+    }
+
+    /**
+     * @param string $error
+     *
+     * @return Detalhe
+     */
+    public function setMotivo5($motivo)
+    {
+        $this->motivo5 = $motivo;
         return $this;
     }
 }
